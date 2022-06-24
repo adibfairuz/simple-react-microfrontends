@@ -9,14 +9,10 @@
     ]
   },
   "scripts": {
-    "kill-ports": "kill-port --port 8080,3001,3002",
-    "start": "npm run kill-ports && lerna run --parallel start",
+    "start": "lerna run --parallel start",
     "build": "lerna run build"
   },
   "devDependencies": {
-    "lerna": "^4.0.0"
-  },
-  "dependencies": {
-    "kill-port": "^2.0.0"
+    "lerna": "^5.1.5"
   }
 }
